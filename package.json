@@ -5,6 +5,10 @@
   "dependencies": {
     "antd": "^3.13.0",
     "antd-mobile": "^2.2.8",
+    "axios": "^0.18.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.7",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
@@ -17,7 +21,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon ./server/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +38,6 @@
     "babel-plugin-import": "^1.11.0",
     "customize-cra": "^0.2.11",
     "react-app-rewired": "^2.0.3"
-  }
+  },
+  "proxy": "http://localhost:7000"
 }

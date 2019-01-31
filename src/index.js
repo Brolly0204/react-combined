@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Link, Switch, Redirect } from 'react-router-dom'
 import reducers from './reducer.js'
 import Auth from './Auth.js'
 import DashBoard from './DashBoard.js'
+import './config.js'
 
 /* eslint-disable no-undef */
 window.composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

@@ -1,47 +1,15 @@
 const express = require('express')
-const userModel = require('./model/user')
+const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
+const userRouter = require('./router/user')
 
 const app = express()
-
-app.get('/data', (req, res) => {
-  userModel.find({}, function(err, doc) {
-    if (!err) {
-      res.json({
-        code: 0,
-        data: doc[0]
-      })
-    }
-  })
-})
-
-app.get('/add', (req, res) => {
-  const random = Math.round(Math.random() * 100)
-  userModel.create(
-    {
-      user: 'wenli' + random,
-      age: random
-    },
-    function(err, doc) {
-      if (!err) {
-        res.json({
-          code: 0,
-          data: doc
-        })
-      }
-    }
-  )
-})
-
-app.get('/removeAll', (req, res) => {
-  userModel.deleteMany({}, function(err, doc) {
-    if (!err) {
-      res.json({
-        code: 0,
-        data: []
-      })
-    }
-  })
-})
-
 const PORT = 7000
-app.listen(PORT)
+
+app.use(cookieParser())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use('/user', userRouter)
+
+app.listen(PORT, () => console.log(`listening to ${PORT}`))

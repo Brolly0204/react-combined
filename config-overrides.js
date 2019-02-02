@@ -1,6 +1,15 @@
-const { override, fixBabelImports, addBabelPlugins } = require('customize-cra')
+const {
+  override,
+  fixBabelImports,
+  addBabelPlugins,
+  addLessLoader
+} = require('customize-cra')
 
 module.exports = override(
+  addLessLoader({
+    strictMath: true,
+    noIeCompat: true
+  }),
   ...addBabelPlugins(['@babel/plugin-proposal-decorators', { legacy: true }]),
   fixBabelImports('import', {
     libraryName: 'antd-mobile',

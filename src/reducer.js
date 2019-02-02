@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import { counter } from './redux.js'
-import { auth } from './Auth.redux.js'
+import user from './redux/user'
+import chatuser from './redux/chatuser'
 
 export default combineReducers({
-  counter,
-  auth
+  user,
+  chatuser
 })

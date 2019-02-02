@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd79e557-1790-4cd9-b12e-94511797242b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/boss/boss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/boss/boss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/dashboard/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/genius/genius.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/genius/genius.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/usercard/usercard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/usercard/usercard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/dashboard/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
@@ -36,6 +32,15 @@
                 <element signature="e#0#40#0" expanded="true" />
                 <element signature="n#!!block;n#Msg#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -86,13 +91,13 @@
         <option value="$PROJECT_DIR$/src/redux/chatuser.js" />
         <option value="$PROJECT_DIR$/src/redux/user.js" />
         <option value="$PROJECT_DIR$/src/reducer.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/component/genius/genius.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/component/boss/boss.js" />
         <option value="$PROJECT_DIR$/src/component/usercard/usercard.js" />
         <option value="$PROJECT_DIR$/src/component/navlink/navlink.js" />
         <option value="$PROJECT_DIR$/src/component/dashboard/dashboard.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -221,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549087079660</updated>
       <workItem from="1549087081406" duration="184000" />
-      <workItem from="1549087675350" duration="14555000" />
+      <workItem from="1549087675350" duration="14682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14739000" />
+    <option name="totallyTimeSpent" value="14866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -342,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/chatuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -414,6 +412,13 @@
             <element signature="e#0#40#0" expanded="true" />
             <element signature="n#!!block;n#Msg#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>

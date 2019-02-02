@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+.idea
 
+# mongod data
 /server/data
 
 # testing

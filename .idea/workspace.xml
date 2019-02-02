@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd79e557-1790-4cd9-b12e-94511797242b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config-overrides.js" beforeDir="false" afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/_mdb_catalog.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/collection-0-8529767342673901452.wt" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/collection-0-8529767342673901452.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/diagnostic.data/metrics.2019-01-30T07-10-49Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/diagnostic.data/metrics.2019-01-30T07-10-49Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/data/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/index-1-8529767342673901452.wt" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/index-1-8529767342673901452.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/journal/WiredTigerLog.0000000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/mongod.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/model/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auth.redux.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashBoard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,14 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/usercard/usercard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="386">
+              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -122,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/component/genius/genius.js" />
         <option value="$PROJECT_DIR$/src/component/boss/boss.js" />
         <option value="$PROJECT_DIR$/src/component/usercard/usercard.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -148,6 +135,11 @@
             <path>
               <item name="imooc" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imooc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imooc" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imooc" type="b2602c69:ProjectViewProjectNode" />
@@ -238,12 +230,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549087079660</updated>
       <workItem from="1549087081406" duration="184000" />
-      <workItem from="1549087675350" duration="10474000" />
+      <workItem from="1549087675350" duration="10800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10658000" />
+    <option name="totallyTimeSpent" value="10984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -264,7 +256,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32923833" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32923833" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -420,11 +412,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/usercard/usercard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="386">
+          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>

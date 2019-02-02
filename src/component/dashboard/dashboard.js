@@ -14,7 +14,7 @@ function User() {
   return <h2>个人中心</h2>
 }
 
-function createNavList(user) {
+function createNavList(type) {
   return [
     {
       path: '/boss',
@@ -22,7 +22,7 @@ function createNavList(user) {
       icon: 'boss',
       title: '牛人列表',
       component: Boss,
-      hide: user.type === 'genius'
+      hide: type === 'genius'
     },
     {
       path: '/genius',
@@ -30,7 +30,7 @@ function createNavList(user) {
       icon: 'job',
       title: 'BOSS列表',
       component: Genius,
-      hide: user.type === 'boss'
+      hide: type === 'boss'
     },
     {
       path: '/msg',
@@ -49,11 +49,11 @@ function createNavList(user) {
   ]
 }
 
-@connect(state => ({...state}))
+@connect(state => ({...state.user}))
 class Dashboard extends Component {
   render() {
-    const {user, location: {pathname}} = this.props
-    const navList = createNavList(user)
+    const {type, location: {pathname}} = this.props
+    const navList = createNavList(type)
     return (
       <div>
         <NavBar className="fixed-header" mode={'dark'}>

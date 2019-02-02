@@ -29,7 +29,7 @@ ReactDOM.render(
           <Route path="/geniusinfo" component={Geniusinfo} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
-          <Route component={Dashboard} />
+          <Route path="*" component={Dashboard} />
         </Switch>
       </div>
     </BrowserRouter>

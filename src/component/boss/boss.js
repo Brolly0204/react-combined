@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Card, WingBlank, WhiteSpace} from "antd-mobile"
 import { connect } from 'react-redux'
 import { getUserList } from '../../redux/chatuser'
-import UserCard from "../genius/genius"
+import UserCard from '../usercard/usercard'
 
 @connect(
   state => ({ ...state.chatuser }),

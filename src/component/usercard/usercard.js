@@ -23,7 +23,7 @@ class UserCard extends Component {
                   extra={<span>{v.title}</span>}
                 />
                 <Card.Body>
-                  <div>职位要求：{v.desc}</div>
+                  {v.type === 'boss' ? (<div>职位要求：{v.desc}</div>) : <div>{v.desc}</div>}
                 </Card.Body>
                   {v.type === 'boss' ?
                 ( <Card.Footer content={`薪资：${v.money}`} extra={<div>公司：{v.company}</div>}/>)

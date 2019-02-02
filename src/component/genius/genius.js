@@ -9,6 +9,7 @@ import UserCard from '../usercard/usercard'
 )
 class Genius extends Component {
   componentDidMount() {
+    console.log('gen boss')
     this.props.getUserList('boss')
   }
 

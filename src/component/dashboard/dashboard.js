@@ -5,14 +5,9 @@ import { NavBar } from 'antd-mobile'
 import NavLinkBar from '../navlink/navlink'
 import Boss from '../boss/boss'
 import Genius from '../genius/genius'
-
-function Msg() {
-  return <h2>消息列表</h2>
-}
-
-function User() {
-  return <h2>个人中心</h2>
-}
+import User from '../user/user'
+import Msg from '../msg/msg'
+import { getMsgList, recvMsg } from '../../redux/chat'
 
 function createNavList(type) {
   return [
@@ -49,23 +44,33 @@ function createNavList(type) {
   ]
 }
 
-@connect(state => ({...state.user}))
+@connect(
+  state => ({ ...state.user, ...state.chat }),
+  { getMsgList, recvMsg }
+)
 class Dashboard extends Component {
+  componentDidMount() {
+    if (!this.props.chatmsg.length) {
+      this.props.getMsgList()
+      this.props.recvMsg()
+    }
+  }
   render() {
-    const {type, location: {pathname}} = this.props
+    const {
+      type,
+      location: { pathname }
+    } = this.props
     const navList = createNavList(type)
     return (
       <div>
         <NavBar className="fixed-header" mode={'dark'}>
-          { navList.find(v => v.path === pathname).title }
+          {navList.find(v => v.path === pathname).title}
         </NavBar>
-        <div style={{marginTop: '45px'}}>
+        <div style={{ marginTop: '45px' }}>
           <Switch>
-            {
-              navList.map(v => (
-                <Route key={v.path} path={v.path} component={v.component} />
-              ))
-            }
+            {navList.map(v => (
+              <Route key={v.path} path={v.path} component={v.component} />
+            ))}
           </Switch>
         </div>
         <NavLinkBar data={navList} />

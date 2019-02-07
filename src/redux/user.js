@@ -1,13 +1,12 @@
 import axios from 'axios'
-import {
-  getRedirectTo
-} from '../util'
+import { getRedirectTo } from '../util'
 
 // const REGISTER_SUCCESS = 'REGISTER_SUCCESS'
 // const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
 const AUTH_SUCCESS = 'AUTH_SUCCESS'
 const ERROR_MSG = 'ERROR_MSG'
 const LOAD_DATA = 'LOAD_DATA'
+const LOGOUT = 'LOGOUT'
 
 const initState = {
   redirectTo: '',
@@ -37,6 +36,8 @@ export default function userReducer(state = initState, action) {
         ...state,
         msg: action.msg
       }
+    case LOGOUT:
+      return { ...initState, redirectTo: '/login' }
     default:
       return state
   }
@@ -63,34 +64,28 @@ function errorMsg(msg) {
   }
 }
 
-export function loginAction({
-  user,
-  pwd
-}) {
+export function loginAction({ user, pwd }) {
   if (!user || !pwd) {
     return errorMsg('用户名密码不能为空！')
   }
   return dispatch => {
-    axios.post('/user/login', {
-      user,
-      pwd
-    }).then(res => {
-      const result = res.data
-      if (result.code === 0) {
-        dispatch(authSuccess(result.data))
-      } else {
-        dispatch(errorMsg(res.data.msg))
-      }
-    })
+    axios
+      .post('/user/login', {
+        user,
+        pwd
+      })
+      .then(res => {
+        const result = res.data
+        if (result.code === 0) {
+          dispatch(authSuccess(result.data))
+        } else {
+          dispatch(errorMsg(res.data.msg))
+        }
+      })
   }
 }
 
-export function registerAction({
-  user,
-  pwd,
-  repeatpwd,
-  type
-}) {
+export function registerAction({ user, pwd, repeatpwd, type }) {
   if (!user || !pwd || !repeatpwd) {
     return errorMsg('请输入用户名或密码！')
   }
@@ -100,22 +95,26 @@ export function registerAction({
   }
 
   return dispatch => {
-    axios.post('/user/register', {
-      user,
-      pwd,
-      type
-    }).then(res => {
-      const result = res.data
-      if (result.code === 0) {
-        dispatch(authSuccess({
-          user,
-          pwd,
-          type
-        }))
-      } else {
-        dispatch(errorMsg(res.data.msg))
-      }
-    })
+    axios
+      .post('/user/register', {
+        user,
+        pwd,
+        type
+      })
+      .then(res => {
+        const result = res.data
+        if (result.code === 0) {
+          dispatch(
+            authSuccess({
+              user,
+              pwd,
+              type
+            })
+          )
+        } else {
+          dispatch(errorMsg(res.data.msg))
+        }
+      })
   }
 }
 
@@ -130,4 +129,8 @@ export function update(data) {
       }
     })
   }
+}
+
+export function logoutsubmit() {
+  return { type: LOGOUT }
 }
